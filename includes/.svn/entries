@@ -1,0 +1,52 @@
+8
+
+dir
+4
+https://txtbus.svn.sourceforge.net/svnroot/txtbus/includes
+https://txtbus.svn.sourceforge.net/svnroot/txtbus
+
+
+
+2011-01-28T18:33:55.125627Z
+3
+warman_gary
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+41c60cf4-8348-421b-9033-5bd7354f3876
+
+sql.rb
+file
+
+
+
+
+2011-01-31T15:54:00.000000Z
+3514848532edcb2e3ed62db1d3742c27
+2011-01-28T16:23:29.202536Z
+1
+warman_gary
+
+conf.rb
+file
+
+
+
+
+2011-01-31T15:54:00.000000Z
+3080c84a301621f7563665eff1b4844d
+2011-01-28T16:23:29.202536Z
+1
+warman_gary
+

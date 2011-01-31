@@ -1,0 +1,7 @@
+.updateform
+	%form{:action=>"/update", :method=>"post"}
+		%label{:for=>"content"} Type an update
+		%br
+		%input{:maxlength => 150, :size => 32, :style=>"height: 15px; width: 300px;", :type=>"text", :name=>"update", :id=>"update"}
+		%br
+		%input{:type => "submit", :name=>"submit", :value=>"Post update"}

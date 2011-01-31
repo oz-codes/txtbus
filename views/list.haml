@@ -1,0 +1,14 @@
+We list the users here
+%select.id#id{:name => "id"}
+	-for i in 0..usr.length-1 do 
+		-id = i
+		-name = usr[i]
+		%option{:value => id, :selected=> (i==0?true:false)}=name
+	
+%script
+	$(document).ready(function() {
+	$(".id").bind("change",function() {
+	if($(this).val() == "0") { return; }
+	window.location="list/"+$(this).val();
+	})
+	})

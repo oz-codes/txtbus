@@ -1,0 +1,11 @@
+%ul
+-users.each do |v|
+	%a{:href=>"/user/#{v}"}
+		%li.user=v	
+%br
+.nav
+	Pages
+	%br
+	-for i in 0..pages do
+		=(i==current)?" #{i+1} ":"<a href=\"/users/#{i+1}\">#{i+1}</a>"
+%ul

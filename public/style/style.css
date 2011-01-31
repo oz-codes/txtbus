@@ -1,0 +1,129 @@
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+}
+.right {
+	text-align: right;
+	margin-left: auto;
+	margin-right: 0px;
+	width: 500px;
+}
+.left {
+	text-align: left;
+	margin-left: 0px;
+	margin-right: auto;
+	width: 500px;
+}
+.textright {
+	text-align: right;
+}
+.textcenter {
+	text-align: center;
+}
+.textleft {
+	text-align: left;
+}
+ul.nav {
+	list-style-type: none;
+}
+.register input {
+}
+body {
+	background: url('http://bamfbackgrounds.com/upload/g0745fji-TieDye.JPG') repeat center left;
+	background-color: #dddddd;
+}
+ul.nav li {
+	text-align: center;
+	display: inline;
+	font-size: 12px;
+	border-width: 1px;
+	border-style: none solid none; 
+}
+ul.nav a {
+	text-decoration: none;
+	color: black;
+}
+	
+.post {
+	height: 80%;
+	overflow: auto;
+}
+.pagetitle {
+	text-align: right;
+	font-family: monospace;
+}
+.page {
+	background: url('http://farm5.static.flickr.com/4004/4360448252_12bd7c8f41_z.jpg') repeat-y center center;
+	/*background: url('http://www.sycha.com/wp-content/uploads/2010/10/ruled-004-paper-texture.jpg') no-repeat center center;*/
+	/*background: url('http://fc05.deviantart.net/fs48/f/2009/194/f/6/Hi_Res_Lined_Paper_Texture_by_merileekitty.jpg') no-repeat center center;*/
+	background-attachment: scroll;
+	border: 1px solid black;
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	position: relative;
+	top: 40px;
+	margin-top: none;
+	margin-bottom: none;
+	height: 600px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #dddddd
+}
+.options {
+	position: absolute;
+	left: 25.7%;
+	border: 1px solid black
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-radius-bottomleft: 3px;
+	border-radius-bottomright: 3px;
+	width: 49%;
+	top: 5%;
+	background-color: #dddddd;
+}
+.header {
+}
+.main {
+}
+.footer {
+}
+.title {
+	border: 1px solid black;
+}
+.content .text {
+	border: 1px solid black;
+}
+.update {
+	display: block
+}
+.admin {
+	display: inline
+}
+.copyright {
+	position: absolute;
+	left: 23%;
+	top: 97%;
+	font-family: system;
+}
+
+a {
+	color: black
+}
+a:hover {
+	color: #005c00;
+}
+.register {
+}
+.time {
+	margin-left: 250px;
+	font-size: 8px;
+}

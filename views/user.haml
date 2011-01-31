@@ -1,0 +1,23 @@
+%script
+	-following=1
+	="following = #{following}"
+.posts
+-for i in 0..stats.length do
+	-next if stats[i].nil?
+	-stat = stats[i]
+	-id = ids[i]
+	-t = Time.at(times[i])
+	.update
+		.text=stat
+		.time="(Posted #{t.strftime('%m/%d/%Y at %I:%M%p')})"
+		-if (session[:loggedin] == true && session[:username].downcase == username.downcase) || session[:usertype] > 0 then
+			.admin.time 
+				%a{:href=>"/delete/update/#{id}"} 
+					Delete
+%br
+.nav
+	Pages
+	%br
+	-for i in 0..pages do
+		=(i==current)?" #{i+1} ":"<a href=\"/user/#{username}/#{i+1}\">#{i+1}</a>"
+

@@ -1,0 +1,26 @@
+.installform
+	%form{:method=>"post",:action=>"/install"}
+		%label{:for=>"name"} Community name: 
+		%input{:type=>"text",:name=>"name",:id=>"name"}
+		%br
+		%label{:for=>"admin"} Admin username: 
+		%input{:type=>"text",:name=>"admin",:id=>"admin"}
+		%br
+		%label{:for=>"password"} Admin password: 
+		%input{:type=>"password",:name=>"password",:id=>"password"}
+		%br
+		%label{:for=>"email"} Admin email: 
+		%input{:type=>"text",:name=>"email",:id=>"email"}
+		%br
+		%label{:for=>"prefix"} Table prefix: 
+		%input{:type=>"text",:name=>"prefix",:id=>"prefix"}
+		%br
+		%label{:for=>"db"} Database name: 
+		%input{:type=>"text",:name=>"db",:id=>"db"}
+		%br
+		%label{:for=>"dbpass"} Database password: 
+		%input{:type=>"password",:name=>"dbpass",:id=>"dbpass"}
+		%br
+		%label{:for=>"dbhost"} Database host: 
+		%input{:type=>"text",:name=>"dbhost",:id=>"dbhost"}
+		%br

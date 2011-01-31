@@ -1,0 +1,2 @@
+You aren't currently logged in. Please log in at
+%a{:href => "/login"} this link.

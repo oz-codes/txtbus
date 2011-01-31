@@ -1,12 +1,4 @@
 -README
 
-txtbus is a microsocial networking platform, akin to twitter. Right now, it's in it's early alpha stage. 
-
-Requirements:
-	Ruby
-	Sinatra
-	HAML
-	MySQL
-
-Run /install to install it on your server.
+Run /install to install this.
 All data right now should be installed in the root directory, as that's where everything redirects to. Will add more support for alternate directories later!

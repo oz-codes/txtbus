@@ -1,0 +1,56 @@
+!!!
+-if !defined? opts then
+	-opts = ""
+-else
+%html
+	%head
+		%link{:href => "/style/style.css", :rel => "stylesheet"}
+		%script{:src => "http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js"}
+		%script{:src => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"}
+		%title txt
+	%body
+		.options.textcenter=opts 
+		.page
+			.pagetitle.right
+				%h2= options.name
+				-if session[:loggedin] == true then
+					%h6.small= "Logged in as #{session[:hash]['username']}"
+			.pagecontent.center
+				.header
+					.navbar.center
+						%ul.nav
+							
+							%a{:href=>"/login"}
+								%li
+									Log in
+							%a{:href=>"/users"}
+								%li
+									List users
+							-if session[:loggedin] then
+								%a{:href=>"/logout"}
+									%li
+										Log out
+								%a{:href=>"/post"} 
+									%li
+										Post updates
+								%a{:href =>"/user/#{session[:username]}"}
+									%li
+										Your page
+							%a{:href=>"/about"} 
+								%li
+									About
+							%a{:href=>"/"} 
+								%li
+									Index
+							-if !session[:loggedin] then
+								%a{:href => "/register"}
+									%li
+										Register
+						%br
+				.main
+					=yield
+				.footer
+					.copyright.right
+						&copy; Gary Warman
+						%br
+				%script{:src=>"/js/main.js"}
